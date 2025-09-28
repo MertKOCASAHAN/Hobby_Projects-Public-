@@ -1,0 +1,9 @@
+
+import random
+
+import string
+chars = string.ascii_letters + string.digits + string.punctuation
+uzunluk = int(input("Şifre kaç karakter uzunluğunda olsun?"))
+
+şifre = ''.join(random.choice(chars) for i in range(uzunluk))
+print("Oluşturulan şifre:", şifre)
